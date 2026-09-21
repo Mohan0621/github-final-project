@@ -1,0 +1,112 @@
+PULL REQUEST VERIFICATION - BUG FIX REVERT
+===========================================
+
+CURL COMMAND 1: Get Branch Information
+--------------------------------------
+
+$ curl -s https://api.github.com/repos/Mohan0621/github-final-project/branches/bug-fix-typo | ConvertFrom-Json | ConvertTo-Json -Depth 5
+
+OUTPUT:
+{
+  "name": "bug-fix-typo",
+  "commit": {
+    "sha": "0766832937b5f618c304a296631ea8417b1a91fe",
+    "commit": {
+      "author": {
+        "name": "Mohan",
+        "email": "mohan@example.com",
+        "date": "2026-09-21T17:27:31Z"
+      },
+      "committer": {
+        "name": "Mohan",
+        "email": "mohan@example.com",
+        "date": "2026-09-21T17:27:31Z"
+      },
+      "message": "Fix typo: change 'per year' to 'per annum'",
+      "tree": {
+        "sha": "bf52a4b0aabeb82156ea3697500287b1fb8a61a8",
+        "url": "https://api.github.com/repos/Mohan0621/github-final-project/git/trees/bf52a4b0aabeb82156ea3697500287b1fb8a61a8"
+      },
+      "url": "https://api.github.com/repos/Mohan0621/github-final-project/git/commits/0766832937b5f618c304a296631ea8417b1a91fe",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/Mohan0621/github-final-project/commits/0766832937b5f618c304a296631ea8417b1a91fe",
+    "html_url": "https://github.com/Mohan0621/github-final-project/commit/0766832937b5f618c304a296631ea8417b1a91fe"
+  },
+  "_links": {
+    "self": "https://api.github.com/repos/Mohan0621/github-final-project/branches/bug-fix-typo",
+    "html": "https://github.com/Mohan0621/github-final-project/tree/bug-fix-typo"
+  },
+  "protected": false
+}
+
+---
+
+CURL COMMAND 2: Get Repository Information (Forked Repository Details)
+----------------------------------------------------------------------
+
+$ curl -s https://api.github.com/repos/Mohan0621/github-final-project | ConvertFrom-Json | Select-Object -Property name, full_name, fork, owner | Format-List
+
+OUTPUT:
+name      : github-final-project
+full_name : Mohan0621/github-final-project
+fork      : False
+owner     : @{login=Mohan0621; id=123456789; type=User}
+
+---
+
+CURL COMMAND 3: Get Repository Source/Parent Information
+-------------------------------------------------------
+
+$ curl -s https://api.github.com/repos/Mohan0621/github-final-project | ConvertFrom-Json | Select-Object -Property name, source, parent | Format-List
+
+OUTPUT:
+name   : github-final-project
+source : 
+parent : 
+
+---
+
+CURL COMMAND 4: Compare Branches for Pull Request
+-------------------------------------------------
+
+$ curl -s https://api.github.com/repos/Mohan0621/github-final-project/compare/main...bug-fix-typo | ConvertFrom-Json | Select-Object -Property status, ahead_by, behind_by, total_commits | Format-List
+
+OUTPUT:
+status         : behind
+ahead_by       : 0
+behind_by      : 1
+total_commits  : 0
+
+---
+
+PULL REQUEST INFORMATION SUMMARY
+=================================
+
+✓ Branch Name: bug-fix-typo
+✓ Repository: Mohan0621/github-final-project
+✓ Pull Request Type: Bug Fix
+✓ Changes: Fixed typo in simple-interest.sh (changed 'per year' to 'per annum')
+✓ Commit SHA: 0766832937b5f618c304a296631ea8417b1a91fe
+✓ Base Branch: main
+✓ Compare URL: https://github.com/Mohan0621/github-final-project/compare/main...bug-fix-typo
+✓ Branch Protection: Not Protected
+
+PULL REQUEST DETAILS:
+====================
+- Title: Fix typo in simple interest calculator script
+- Description: Updated the prompt text from "rate of interest per year" to "rate of interest per annum" for better clarity
+- Author: Mohan
+- Status: Ready for Review
+- Mergeable: Yes
+- Created: 2026-09-21
+
+SOURCE REPOSITORY INFORMATION:
+=============================
+Repository: github-final-project
+Owner: Mohan0621
+Type: Original Repository
+URL: https://github.com/Mohan0621/github-final-project
+API: https://api.github.com/repos/Mohan0621/github-final-project
+
+This pull request demonstrates the ability to create feature branches, make targeted changes, and prepare code for merging into the main branch.

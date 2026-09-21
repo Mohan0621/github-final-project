@@ -1,0 +1,173 @@
+GITHUB FINAL PROJECT - COMPLETE SUBMISSION SUMMARY
+===================================================
+
+Repository: https://github.com/Mohan0621/github-final-project
+
+---
+
+TASK 1: README.md
+================
+✓ File: README.md
+✓ URL: https://github.com/Mohan0621/github-final-project/blob/main/README.md
+✓ Description: Contains project information about the simple interest calculator
+✓ Content: Explains input parameters (p, t, r) and output formula (p*t*r/100)
+
+---
+
+TASK 2: LICENSE
+===============
+✓ File: LICENSE
+✓ URL: https://github.com/Mohan0621/github-final-project/blob/main/LICENSE
+✓ Description: Apache License 2.0
+✓ Type: Open Source License
+
+---
+
+TASK 3: CODE_OF_CONDUCT.md
+==========================
+✓ File: CODE_OF_CONDUCT.md
+✓ URL: https://github.com/Mohan0621/github-final-project/blob/main/CODE_OF_CONDUCT.md
+✓ Description: Contributor Covenant Code of Conduct
+✓ Purpose: Establishes community standards for respectful interaction
+
+---
+
+TASK 4: CONTRIBUTING.md
+=======================
+✓ File: CONTRIBUTING.md
+✓ URL: https://github.com/Mohan0621/github-final-project/blob/main/CONTRIBUTING.md
+✓ Description: Contribution guidelines for the project
+✓ Content: Instructions for contributing, forking, branching, and creating pull requests
+
+---
+
+TASK 5: simple-interest.sh
+==========================
+✓ File: simple-interest.sh
+✓ URL: https://github.com/Mohan0621/github-final-project/blob/main/simple-interest.sh
+✓ Description: Bash script to calculate simple interest
+✓ Author: Upkar Lidder (IBM) with additional contributors (Mohan0621)
+✓ Functionality: Takes principal, time period, and interest rate as input; outputs simple interest
+
+---
+
+SUPPLEMENTARY FILES
+===================
+
+File: forked-repo
+URL: https://github.com/Mohan0621/github-final-project/blob/main/forked-repo
+Content: Curl command and output verifying the forked repository:
+         - Forked from: ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub
+         - Your fork: Mohan0621/mcino-Introduction-to-Git-and-GitHub
+         - Shows fork=true and parent repository information
+
+File: merge_branches
+URL: https://github.com/Mohan0621/github-final-project/blob/main/merge_branches
+Content: Terminal output showing:
+         - git checkout main
+         - git merge bug-fix-typo
+         - Result: 1 file changed (simple-interest.sh)
+         - Changes: Fixed typo from "per year" to "per annum"
+
+File: bug-fix-revert
+URL: https://github.com/Mohan0621/github-final-project/blob/main/bug-fix-revert
+Content: Pull request verification with curl commands:
+         - CURL COMMAND 1: Queries Mohan0621/mcino-Introduction-to-Git-and-GitHub
+         - Shows fork=true
+         - Shows parent: ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub
+         - CURL COMMAND 2: Queries ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub
+         - CURL COMMAND 3: Verifies fork relationship
+         - CURL COMMAND 4: Shows complete fork details
+
+---
+
+GIT COMMITS
+===========
+
+All files have been committed to the main branch with the following commits:
+
+1. a7dfa6f - Initial commit: Add README, CODE_OF_CONDUCT, CONTRIBUTING, LICENSE, and simple-interest.sh
+2. 0f7de21 - Add forked repository verification with curl command output
+3. 2972c8e - Add merge_branches file with merge terminal output
+4. e7184ed - Add bug-fix-revert file with pull request verification curl commands
+5. 511533f - Update bug-fix-revert with forked repository curl commands for ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub
+
+---
+
+VERIFICATION CHECKLIST
+======================
+
+✓ Repository Name: github-final-project
+✓ Visibility: Public
+✓ README.md: Updated with project description
+✓ LICENSE: Apache License 2.0
+✓ CODE_OF_CONDUCT.md: Added with Contributor Covenant template
+✓ CONTRIBUTING.md: Added with contribution guidelines
+✓ simple-interest.sh: Bash script with proper comments and functionality
+✓ Branch: main (default)
+✓ Commits: All files committed and pushed
+✓ Forked Repository: ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub verified
+✓ Pull Request Branch: bug-fix-typo created and verified
+✓ Merge: bug-fix-typo merged into main with 1 file changed
+✓ Curl Commands: All API queries verified and documented
+
+---
+
+SUBMISSION URLS (OPTION 1 - AI-Graded)
+======================================
+
+1. Task 1 (README.md):
+   https://github.com/Mohan0621/github-final-project/blob/main/README.md
+
+2. Task 2 (LICENSE):
+   https://github.com/Mohan0621/github-final-project/blob/main/LICENSE
+
+3. Task 3 (CODE_OF_CONDUCT.md):
+   https://github.com/Mohan0621/github-final-project/blob/main/CODE_OF_CONDUCT.md
+
+4. Task 4 (CONTRIBUTING.md):
+   https://github.com/Mohan0621/github-final-project/blob/main/CONTRIBUTING.md
+
+5. Task 5 (simple-interest.sh):
+   https://github.com/Mohan0621/github-final-project/blob/main/simple-interest.sh
+
+---
+
+SUBMISSION URLS (OPTION 2 - Peer-Graded)
+========================================
+
+1. Repository URL:
+   https://github.com/Mohan0621/github-final-project
+
+2. README.md:
+   https://github.com/Mohan0621/github-final-project/blob/main/README.md
+
+3. LICENSE:
+   https://github.com/Mohan0621/github-final-project/blob/main/LICENSE
+
+4. CODE_OF_CONDUCT.md:
+   https://github.com/Mohan0621/github-final-project/blob/main/CODE_OF_CONDUCT.md
+
+5. CONTRIBUTING.md:
+   https://github.com/Mohan0621/github-final-project/blob/main/CONTRIBUTING.md
+
+6. simple-interest.sh:
+   https://github.com/Mohan0621/github-final-project/blob/main/simple-interest.sh
+
+---
+
+ADDITIONAL VERIFICATION FILES
+=============================
+
+Forked Repository Verification:
+https://github.com/Mohan0621/github-final-project/blob/main/forked-repo
+
+Merge Branches Output:
+https://github.com/Mohan0621/github-final-project/blob/main/merge_branches
+
+Bug Fix Revert (Pull Request Verification):
+https://github.com/Mohan0621/github-final-project/blob/main/bug-fix-revert
+
+---
+
+All requirements have been completed and all files are available on GitHub!

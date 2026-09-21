@@ -1,0 +1,31 @@
+MERGE BRANCHES - TERMINAL OUTPUT
+=================================
+
+Command Sequence:
+-----------------
+
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+$ git merge bug-fix-typo
+Updating 0f7de21..0766832
+Fast-forward
+ simple-interest.sh | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+MERGE SUMMARY:
+==============
+✓ Successfully merged bug-fix-typo branch into main
+✓ 1 file was changed (simple-interest.sh)
+✓ 1 insertion added
+✓ 1 deletion removed
+✓ Fast-forward merge completed
+
+Details:
+- Branch switched to: main
+- Merge source: bug-fix-typo
+- Files modified: simple-interest.sh
+- Changes: Fixed typo from "rate of interest per year" to "rate of interest per annum"
+
+The merge was successful and the bug fix has been integrated into the main branch.

@@ -20,7 +20,7 @@ echo "Enter the principal:"
 read p
 echo "Enter time period in years:"
 read t
-echo "Enter rate of interest per year:"
+echo "Enter rate of interest per annum:"
 read r
 
 s=$(echo "scale=2; $p * $t * $r / 100" | bc)

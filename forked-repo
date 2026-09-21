@@ -1,7 +1,7 @@
 CURL COMMAND TO VERIFY FORKED REPOSITORY
 ==========================================
 
-Curl Command Used:
+Curl Command Used:Copy and paste the terminal output of the first merge saved in the file named merge_branches, including the commands git checkout main and git merge bug-fix-typo. The output should clearly indicate that 1 file was changed.
 ------------------
 $ curl -s https://api.github.com/repos/Mohan0621/mcino-Introduction-to-Git-and-GitHub | ConvertFrom-Json | Select-Object -Property name, full_name, fork, parent | Format-List
 
